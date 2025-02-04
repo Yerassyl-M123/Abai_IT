@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заявки</title>
+</head>
+<body>
+    <h2>Заполните заявку</h2>
+    <form action="/submit-form" method="post" enctype="multipart/form-data">
+        <label>ФИО:</label>
+        <input type="text" name="full_name" required><br>
+
+        <label>Дата рождения:</label>
+        <input type="date" name="birth_date" required><br>
+
+        <label>Район проживания:</label>
+        <input type="text" name="region" required><br>
+
+        <label>Контактный телефон:</label>
+        <input type="tel" name="phone" required><br>
+
+        <label>Удостоверение личности:</label>
+        <input type="file" name="id_card" accept="image/*" required><br>
+
+        <label>Фото военного документа(если есть):</label>
+        <input type="file" name="military_doc" accept="image/*"><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
